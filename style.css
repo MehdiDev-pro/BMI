@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --alpha: black;
+  --beta: #b51a00;
+  --gamma: #ebebeb;
+  --delta: #c2c2c2;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Baloo 2', cursive;
+  font-size: 14px;
+  caret-color: var(--beta);
+}
+input,:focus{
+  outline: none;
+}
+.main{
+/*   border:2px solid var(--beta); */
+  background: var(--delta);
+  width: 99%;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result{
+  width: 300px;
+  height: 250px;
+/*   border: 2px solid var(--beta);  */
+  border-radius: 20%/50%;
+  background: var(--beta);
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+  opacity: 0.7;
+}
+.container{
+  width: 300px;
+  height: 250px;
+  border: 2px solid var(--beta);
+  border-radius: 20%/50%;
+/*   background: var(--beta); */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.container input{
+  width: 150px;
+  height: 25px;
+  border: 2px solid var(--beta);
+  border-radius: 10% / 10%;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: var(--gamma);
+}
+.container button{
+  width: 75px;
+  height: 25px;
+  border: 1px solid var(--beta);
+  border-radius: 10%/50%;
+  color: var(--alpha);
+  background-color: var(--gamma);
+}
+::placeholder{
+  color: var(--alpha);
+  text-align: center;
+}
+.container em{
+  font-size: 30px;
+  color: var(--beta);
+  text-align: center;
+  margin-bottom: 20px;
+}
+#result{
+  position: relative; 
+  top: 100px;
+  color: var(--alpha);
+  font-size: 20px;
+  z-index: 1;
+}
+#bmi{
+  position: relative;
+  top: 85px;
+  color: var(--alpha);
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 1;
+}
+/********* Media Quires *********/
+@media screen and (min-width: 480px) {
+  .main{
+    flex-direction: row;
+    }
+  .comtainer{
+    margin-left: 20px;
+    }
+  .result{
+    top: 0px;
+    margin-right: 20px;
+  }
+  
+} 
+
+
